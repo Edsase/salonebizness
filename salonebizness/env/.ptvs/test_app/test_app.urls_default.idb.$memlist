@@ -1,0 +1,6 @@
+include
+urlpatterns
+admin
+TemplateView
+auth_views
+url

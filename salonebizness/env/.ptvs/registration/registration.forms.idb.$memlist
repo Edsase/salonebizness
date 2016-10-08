@@ -1,0 +1,11 @@
+User
+RegistrationFormTermsOfService
+UsernameField
+UserModel
+_
+RegistrationFormNoFreeEmail
+unicode_literals
+UserCreationForm
+RegistrationForm
+RegistrationFormUniqueEmail
+forms

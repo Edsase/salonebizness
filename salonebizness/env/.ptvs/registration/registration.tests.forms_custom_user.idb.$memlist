@@ -1,0 +1,10 @@
+DJANGO_VERSION
+UsernameField
+unicode_literals
+settings
+StrictVersion
+get_version
+RegistrationFormTests
+reload
+TestCase
+forms

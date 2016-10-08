@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>salonebizness_project</Name>
+    <RootNamespace>salonebizness</RootNamespace>
+    <InterpreterId>{497bb266-c3fe-45c7-a22e-2b56266946f5}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>73296874-3110-424f-9ede-217e4e8b5082</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>salonebizness.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="manage.py" />
+    <Compile Include="news\admin.py" />
+    <Compile Include="news\apps.py" />
+    <Compile Include="news\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="news\migrations\__init__.py" />
+    <Compile Include="news\models.py" />
+    <Compile Include="news\templatetags\news_template_tags.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="news\templatetags\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="news\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="news\tests.py" />
+    <Compile Include="news\views.py" />
+    <Compile Include="news\__init__.py" />
+    <Compile Include="polls\admin.py" />
+    <Compile Include="polls\apps.py" />
+    <Compile Include="polls\migrations\__init__.py" />
+    <Compile Include="polls\models.py" />
+    <Compile Include="polls\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="polls\tests.py" />
+    <Compile Include="polls\views.py" />
+    <Compile Include="polls\__init__.py" />
+    <Compile Include="populate_news.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="salonebizness\__init__.py" />
+    <Compile Include="salonebizness\settings.py" />
+    <Compile Include="salonebizness\urls.py" />
+    <Compile Include="salonebizness\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="news\templates\index.html" />
+    <Content Include="polls\templates\index.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="static\css\news\news.css" />
+    <Content Include="static\images\news\Edmond.jpg" />
+    <Content Include="static\js\news\news.js" />
+    <Content Include="templates\news\about.html" />
+    <Content Include="templates\news\add_category.html" />
+    <Content Include="templates\news\add_page.html" />
+    <Content Include="templates\news\base.html" />
+    <Content Include="templates\news\base_boot_strap.html" />
+    <Content Include="templates\news\category.html" />
+    <Content Include="templates\news\cat.html" />
+    <Content Include="templates\news\index.html" />
+    <Content Include="templates\news\login.html" />
+    <Content Include="templates\news\register.html" />
+    <Content Include="templates\registration\login.html" />
+    <Content Include="templates\registration\logout.html" />
+    <Content Include="templates\registration\password_change_form.html" />
+    <Content Include="templates\registration\password_change_done.html" />
+    <Content Include="templates\registration\registration_complete.html" />
+    <Content Include="templates\registration\registration_form.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="media\" />
+    <Folder Include="media\profile_images\" />
+    <Folder Include="news\templatetags\" />
+    <Folder Include="static\" />
+    <Folder Include="news\" />
+    <Folder Include="news\migrations\" />
+    <Folder Include="news\templates\" />
+    <Folder Include="polls\" />
+    <Folder Include="polls\migrations\" />
+    <Folder Include="polls\templates\" />
+    <Folder Include="salonebizness\" />
+    <Folder Include="static\css\news\" />
+    <Folder Include="static\images\" />
+    <Folder Include="static\images\news\" />
+    <Folder Include="static\js\" />
+    <Folder Include="static\css\" />
+    <Folder Include="static\js\news\" />
+    <Folder Include="templates\images\" />
+    <Folder Include="templates\" />
+    <Folder Include="templates\registration\" />
+    <Folder Include="templates\news\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{497bb266-c3fe-45c7-a22e-2b56266946f5}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env (Python 64-bit 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

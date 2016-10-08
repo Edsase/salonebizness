@@ -1,0 +1,62 @@
+
+To run the development server from another machine:
+- $ python manage.py runserver <your_machines_ip_address>:5555 #launches the server on the ip address and port 5555
+
+In project/settings.py, add a directory named template to put html templates.
+	- make a variable/constant TEMPLATE_DIR at the top of the settings file
+	- specify its full path by using os.path.join(BASE_DIR,'templates')
+		- TEMPLATE_DIR  = os.path.join(BASE_DIR, 'templates')
+	- Add TEMPLATE_DIR to TEMPLATES under dirs
+
+To set up static files directory
+	- make a variable/constant STATIC_DIR at the top of the settings file
+	- specify its full path by using os.path.join(BASE_DIR,'templates')
+		- STATIC_DIR  = os.path.join(BASE_DIR, 'static')
+	- Create data structure called STATIC_DIRS if it does not already exist and add STATIC_DIR
+		- STATICFILES_DIRS = [STATIC_DIR,]
+		
+To load static files in a template
+	- load static files
+		- {% load staticfiles %}
+	- Insert the static files using the Django static in the <a>, <img> or <link> tags under href attribute
+		- <img src="{% static "images/Edmond.jpg" %}" alt = "Picture of Edmond" /> <br />
+		
+To populate a database, use a python script at the project level
+- Import os to set up the environment of your program and call the default settings
+	- os.environ.setdefault('DJANGO_SETTINGS_MODULE', salonebizness.settings)
+- Import django
+- call django setup: django.setup()
+- call the script populate_(name of app you want to populate)
+
+Use the slugify function to convert spaces in text to hyphens
+
+Use Django prepopulated_fields under model.admin to automatically populate fields in a model 
+
+To clean a data submitted by users through a form, overide the modelform clean method
+	- Obtain form data from the modelform dictionary attribute cleaned_data
+	- Check and clean this data as you like
+	- resave the cleaned data back to the model form dictionary attribute
+	- do the above steps within the modelform class in models.py
+	class PageForm(forms.ModelForm):
+		...
+		def clean(self):
+			cleaned_data = self.cleaned_data
+			url = cleaned_data.get('url')
+			# If url is not empty and doesn't start with 'http://',
+			# then prepend 'http://'.
+			if url and not url.startswith('http://'):
+				url = 'http://' + url
+				cleaned_data['url'] = url
+		return cleaned_data
+		
+To access the url patterns in another app:
+	- on the main urls.py file:
+		app_name = 'rango'
+			urlpatterns = [...
+			from django.conf.urls import url
+			from rango import views
+		app_name = 'rango'
+			urlpatterns = [
+			url(r'^$', views.index, name='index'),
+			...
+			]

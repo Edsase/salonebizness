@@ -1,0 +1,33 @@
+﻿{% extends 'news/base.html' %}
+{% load staticfiles %}
+
+{% block block_title %}
+    Register
+{%endblock%}
+
+{% block body_block %}
+    <h1>About Page</h1>
+    {% if registered%}
+        <strong>Thank you for registering</strong>
+        <a href="{% url 'news:index' %}">Return to Homepage</a><br />
+
+    {% else %}
+        <strong>Register Here</strong>
+        <form id="user_form" method="post" action="/news/register/" enctype="multipart/form-data">
+    <!--we used enctype="multipart/form-data" above because the form will contain a picture which is large and so needs to be
+        broked into pieces for delivery-->
+    {% csrf_token %}
+    <!--display each form-->
+    {{user_form.as_p}}
+    {{profile_form.as_p}}
+
+    <!--add submission button-->
+    <input type="submit" name="submit" value="Register" />
+
+</form>
+    {% endif %}
+{% endblock %}
+
+
+
+    

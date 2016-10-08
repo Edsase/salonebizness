@@ -1,0 +1,10 @@
+mail
+RegistrationProfile
+unicode_literals
+helpers
+AdminCustomActionsTestCase
+UserModel
+TestCase
+urlresolvers
+Client
+settings

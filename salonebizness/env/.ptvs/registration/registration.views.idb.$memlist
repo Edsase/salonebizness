@@ -1,0 +1,11 @@
+FormView
+sensitive_post_parameters
+REGISTRATION_FORM
+RegistrationView
+import_string
+method_decorator
+TemplateView
+REGISTRATION_FORM_PATH
+ActivationView
+redirect
+settings
