@@ -1,0 +1,6 @@
+include
+urlpatterns
+ActivationView
+TemplateView
+RegistrationView
+url

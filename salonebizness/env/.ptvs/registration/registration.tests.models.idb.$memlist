@@ -1,0 +1,13 @@
+mail
+six
+RegistrationModelTests
+management
+TestCase
+RegistrationProfile
+hashlib
+datetime
+apps
+UserModel
+Site
+re
+settings

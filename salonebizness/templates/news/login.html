@@ -1,0 +1,26 @@
+﻿{% extends 'news/base.html' %}
+<link href="http://v4-alpha.getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+<div class="jombotron">
+
+</div>
+{% load staticfiles %}
+    <h1 class="display-3">
+        {% block title_block %}
+            Login to SaloneBizness News
+        {%endblock%}
+    </h1>
+
+
+{% block body_block %}
+    <form id="login_form" method="post" action="{% url 'news:login' %}">
+        {% csrf_token %}
+        Username: <input type="text" name="username" value="" size="50" />
+        <br />
+        <br />
+        Password: <input type="password" name="password" value="" size="50" />
+        <br />
+        <br />
+        <input type="submit" value="submit" />
+    </form>  
+
+{% endblock %}

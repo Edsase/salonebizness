@@ -1,0 +1,20 @@
+﻿
+<ul>
+    {% if cats %}
+        {% for ct in cats %}
+         
+            
+            {% ifequal ct act_cat %}
+            
+                <li>
+                    
+                    <strong><a href="{% url 'news:show_category' ct.slug %}">{{ct.name}}</a></strong>
+                </li>
+            {%else%}
+                <li><a href="{% url 'news:show_category' ct.slug %}">{{ct.name}}</a></li>
+            {% endifequal %}
+        {%endfor%}
+    {% else %}
+        <li><strong>Category does not exist</strong></li>
+    {%endif%} 
+</ul>
