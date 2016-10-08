@@ -2952,29 +2952,3 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Micro
 2016-10-03T20:10:36: Saving group "C:\Users\SesayE01\Desktop\Studies\Web Developement\SaloneBizness.com\Projects\salonebizness\salonebizness\env\Lib\site-packages\test_app"
 2016-10-03T20:10:36: End of group "C:\Users\SesayE01\Desktop\Studies\Web Developement\SaloneBizness.com\Projects\salonebizness\salonebizness\env\Lib\site-packages\test_app"
 2016-10-03T20:10:37: Deleting 0 files
-
-2016-10-08T16:53:16: Start analysis
-2016-10-08T16:53:16: [WARNING] Library was set explicitly - skipping path detection
-2016-10-08T16:53:16: IncludeModulesFromModulePath = win32com
-2016-10-08T16:53:17: Deleting 0 files
-2016-10-08T16:53:17: astropy.CallDepth = 0
-2016-10-08T16:53:17: matplotlib.CallDepth = 3
-2016-10-08T16:53:17: pandas.CallDepth = 0
-2016-10-08T16:53:17: sympy.CallDepth = 0
-2016-10-08T16:53:17: Start group "C:\Users\SesayE01\Desktop\Studies\Web Developement\SaloneBizness.com\Projects\salonebizness\salonebizness\env\Lib\site-packages\bootstrap_toolkit" with 5 files
-2016-10-08T16:53:18: Parsing "bootstrap_toolkit.widgets" ("C:\Users\SesayE01\Desktop\Studies\Web Developement\SaloneBizness.com\Projects\salonebizness\salonebizness\env\Lib\site-packages\bootstrap_toolkit\widgets.py")
-2016-10-08T16:53:18: Parsing "bootstrap_toolkit._version" ("C:\Users\SesayE01\Desktop\Studies\Web Developement\SaloneBizness.com\Projects\salonebizness\salonebizness\env\Lib\site-packages\bootstrap_toolkit\_version.py")
-2016-10-08T16:53:18: Parsing "bootstrap_toolkit" ("C:\Users\SesayE01\Desktop\Studies\Web Developement\SaloneBizness.com\Projects\salonebizness\salonebizness\env\Lib\site-packages\bootstrap_toolkit\__init__.py")
-2016-10-08T16:53:18: Parsing "bootstrap_toolkit.templatetags.bootstrap_toolkit" ("C:\Users\SesayE01\Desktop\Studies\Web Developement\SaloneBizness.com\Projects\salonebizness\salonebizness\env\Lib\site-packages\bootstrap_toolkit\templatetags\bootstrap_toolkit.py")
-2016-10-08T16:53:18: Parsing "bootstrap_toolkit.templatetags" ("C:\Users\SesayE01\Desktop\Studies\Web Developement\SaloneBizness.com\Projects\salonebizness\salonebizness\env\Lib\site-packages\bootstrap_toolkit\templatetags\__init__.py")
-2016-10-08T16:53:18: Parsing complete
-2016-10-08T16:53:18: Analyzing "bootstrap_toolkit.widgets"
-2016-10-08T16:53:18: Analyzing "bootstrap_toolkit._version"
-2016-10-08T16:53:18: Analyzing "bootstrap_toolkit"
-2016-10-08T16:53:18: Analyzing "bootstrap_toolkit.templatetags.bootstrap_toolkit"
-2016-10-08T16:53:18: Analyzing "bootstrap_toolkit.templatetags"
-2016-10-08T16:53:18: Starting analysis of 5 modules
-2016-10-08T16:53:18: Analysis complete
-2016-10-08T16:53:18: Saving group "C:\Users\SesayE01\Desktop\Studies\Web Developement\SaloneBizness.com\Projects\salonebizness\salonebizness\env\Lib\site-packages\bootstrap_toolkit"
-2016-10-08T16:53:18: End of group "C:\Users\SesayE01\Desktop\Studies\Web Developement\SaloneBizness.com\Projects\salonebizness\salonebizness\env\Lib\site-packages\bootstrap_toolkit"
-2016-10-08T16:53:19: Deleting 0 files
